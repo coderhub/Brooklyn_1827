@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Brooklyn 1827</title>
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
+  <script src="js/jquery-ui/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui/jquery-ui.js"></script>
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.css">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div class="app-container">
+ <div class="nav">
+ 	<div class="nav-container">
+ 		
+ 		<h1>Brooklyn</h1>
+ 		<h3>in the year of 1827</h3><br />
+ 		<p>This is a 3d representation of Brooklyn, modeled after the Hooker's new pocket plan in 1827. You can control transparency with the slider and click on the rope-walks for more information and references.</p><br />
+
+ 		<p>The buildings on this map may not be the exact building location and orientation, they serve as a general reference.</p>
+ 		
+
+ 		<div class="checkbox">
+	    <label>
+	      <input type="checkbox" checked id="dmap" value="option1">
+	      3D Model
+	    </label>
+	  </div>
+
+	  <div id="slider1"></div>
+
+	  <div class="checkbox">
+	    <label>
+	      <input id="hmap" type="checkbox" value="option1">
+	      1827 Hooker's Map
+	    </label>
+	  </div>
+
+	  <div id="slider2"></div>
+
+	<a href="refer.html" id="refer" class="btn btn-block btn-primary">references</a>
+ 	</div>
+
+ </div>
+ <div class="right-map">
+ 	<div class="zoom">
+ 		<div class="zoom-plus"><div class="glyphicon glyphicon-plus"></div></div>
+ 		<div class="zoom-minus"><div class="glyphicon glyphicon-minus"></div></div>
+ 	</div>
+	<div id="draggable" class="ui-widget-content">
+		<div class="location" data-toggle="modal" data-target="#myModal">
+		</div>
+		<div class="ropewalk" data-toggle="modal" data-target="#ropewalk"></div>
+
+
+	  <img class="map3d visible" src="img/3dmodel.png" height="auto" width="100%"/>
+	  <img class="maporg hidden" src="img/map.jpg" height="auto" width="100%"/>
+	</div>
+ </div>
+</div>
+
+<!--Apprentices Library -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Apprentices Library</h4>
+      </div>
+      <div class="modal-body">
+        The Apprentices Library was an important building in Brooklyn because it housed the Village Trustees office,
+        Kings county court, Municipal court, and Brooklyn savings bank.<br />
+        <p>Founded in 1823 by Augustus Graham</p>
+        <p><b>Image Reference:</b>"Constitution of the Apprentices' Library Association of the village of Brooklyn.". Printed material. Brooklyn Museum. <br />
+        	Brooklyn Museum Libraries. Special collections
+        </p>
+        <img src="img/apprentice_lib.jpg" width="100%" height="auto">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End apprentices Library -->
+
+<!--Rope Walk -->
+ <div class="modal fade" id="ropewalk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Rope-Walk by Washington and Tillary</h4>
+      </div>
+      <div class="modal-body">
+        Joshua and Comfort Sands took advantage of this increase of maritime activity,
+starting a business building cordage and rigging equipment. The Sands brothers started
+this businesses by constructing rope walks in various areas on their land. <br />
+In the image below a European rope walk in the 1770's is depicted and covers a large area. This image may represent what tools the sands brothers were using on their ropewalks.
+        <p><b>Image Reference:</b> Handbook of Fibre Rope Technology
+By H A McKenna, J. W. S. Hearle, N O'Hear, p.7</p>
+        
+        <img src="img/ropewalk.png" height="auto" width="100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Rope Walk -->
+
+</body>
+</html>

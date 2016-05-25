@@ -1,0 +1,105 @@
+.nav {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	padding: 10px;
+}
+
+.right-map {
+	display: inline-block;
+	float: right;
+	width: 80%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #99BD91;
+}
+
+.right-map #draggable img {
+	
+}
+
+.zoom {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	z-index: 1000;
+}
+
+
+
+.zoom-plus, .zoom-minus{
+	margin: 5px;
+	padding: 5px 10px;
+	border: 2px solid #333;
+}
+
+.app-container {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#draggable {
+	width: 2000px;
+	height: auto;
+	padding: 0;
+	transform: scale(1);
+}
+
+#slider {
+	width: 90%;
+}
+
+.location {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 1px solid #333;
+	z-index: 1000;
+	position: absolute;
+	top: 370px;
+	left: 600px;
+}
+
+.ropewalk {
+	width: 300px;
+	height: 20px;
+	border: 1px solid #333;
+	z-index: 1000;
+	position: absolute;
+	top: 570px;
+	left: 740px;
+}
+
+.map3d, .maporg{
+	float: left;
+}
+
+.map3d {
+	z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.maporg {
+	z-index: 8;
+	position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+#refer {
+	width: 90%;
+	position: absolute;
+	bottom: 10px;
+}
