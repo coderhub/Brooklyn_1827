@@ -1,16 +1,16 @@
-$(function() {
-    $( "#draggable" ).draggable();
-  });
+    $(function() {
+      $( "#draggable" ).draggable();
+    });
 
-	var zoomCount = 1;
-  $( document ).ready(function() {
+    var zoomCount = 1;
+    $( document ).ready(function() {
 
-  	$(function() {
+    $(function() {
     $( "#slider1,#slider2" ).slider({
     	min: 1,
     	max: 9
 	});
-
+    //Show or hide Original Map image
     $("#hmap").click( function() {
 	if($("#hmap").prop("checked") == false) {
 		
@@ -21,7 +21,7 @@ $(function() {
 		$( ".maporg" ).addClass( "visible" );
 	}
     });
-
+    //Show or hide 3D Map image
 	$("#dmap").click( function() {
 	if($("#dmap").prop("checked") == false) {	
 		$( ".map3d" ).removeClass( "visible" );
@@ -35,10 +35,9 @@ $(function() {
 
   });
 
-
+   //Change map size
     $(".zoom-plus").click( function() {
-    
-	  	
+    	
 	  	 if (zoomCount === 1) {
 	  	 	$("#draggable").css("transform","Scale(1)");
 	  	 	zoomCount++;
@@ -52,7 +51,7 @@ $(function() {
 	  	 	$("#draggable").css("transform","Scale(4)");
 	  	 }
 
-  });
+    });
 
     $(".zoom-minus").click( function() {
     
@@ -69,12 +68,9 @@ $(function() {
 	  	 	$("#draggable").css("transform","Scale(3)");
 	  	 	zoomCount--;
 	  	 }
+    });
 
-  });
-
-	
-  
-
+// Change transparency of 3D Map
 $("#slider1").click(function(){
 	var value = $("#slider1").slider("value");
 	
@@ -103,7 +99,7 @@ $("#slider1").click(function(){
 	}
 
 });
-
+// Change transparency of Original Map
 $("#slider2").click(function(){
 	var value = $("#slider2").slider("value");
 	
@@ -129,6 +125,6 @@ $("#slider2").click(function(){
 		break;
 	}
 
-});
-
   });
+
+});
